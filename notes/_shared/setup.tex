@@ -1,0 +1,37 @@
+% THEOREM TYPES
+
+
+\newtheoremstyle{mydef}
+{\topsep}{\topsep}%
+{}{}%
+{\bfseries}{}
+{\newline}
+{%
+  \rule{\textwidth}{0.4pt}\\*%
+  \thmname{#1}~\thmnumber{#2}\thmnote{\ -\ #3}.\\*[-1.5ex]%
+  \rule{\textwidth}{0.4pt}}%
+
+\theoremstyle{mydef}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{assumption}{Assumption}[section]
+
+\AtEndEnvironment{theorem}{\par\vspace{6pt}\hrule\vspace{1pt}\hrule}
+\AtEndEnvironment{definition}{\par\vspace{6pt}\hrule\vspace{1pt}\hrule}
+\AtEndEnvironment{lemma}{\par\vspace{6pt}\hrule\vspace{1pt}\hrule}
+\AtEndEnvironment{proposition}{\par\vspace{6pt}\hrule\vspace{1pt}\hrule}
+\AtEndEnvironment{corollary}{\par\vspace{6pt}\hrule\vspace{1pt}\hrule}
+\AtEndEnvironment{remark}{\par\vspace{6pt}\hrule\vspace{1pt}\hrule}
+
+% Preserve normal cleveref behaviour for \Cref{label}, while allowing
+% \Cref[custom text]{label} to use custom linked text.
+\let\cleverefCref\Cref
+\RenewDocumentCommand{\Cref}{o m}{%
+  \IfNoValueTF{#1}%
+    {\cleverefCref{#2}}%
+    {\hyperref[#2]{#1}}%
+}

@@ -1,0 +1,9 @@
+bookdown::gitbook:
+  split_by: rmd
+  mathjax: default
+  config:
+    toc:
+      collapse: subsection
+    search:
+      engine: lunr
+    sharing: null

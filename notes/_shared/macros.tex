@@ -1,0 +1,77 @@
+\DeclarePairedDelimiter{\innerbase}{\langle}{\rangle}
+\NewDocumentCommand{\inner}{O{\,\cdot\,} O{\cdot\,}}{%
+  \innerbase{#1, #2}%
+}
+
+% \NewDocumentCommand{\indicator}{$\mathbbm{1}\left($#1$\right)$}
+
+\newcommand{\given}{\; \vert \;}
+
+% types of equality
+\newcommand{\eqas}{\mathrel{\overset{\mathrm{a.s.}}{=}}}
+\newcommand{\eqdist}{\mathrel{\overset{\mathrm{d}}{=}}}
+
+% Math text abbrvs
+\newcommand{\supp}{\text{supp}}
+\newcommand{\KL}{\text{KL}}
+\newcommand{\diag}{\text{diag}}
+\newcommand{\data}{\text{data}}
+\newcommand{\tr}{\text{Tr}}
+\newcommand{\Tr}{\tr}
+
+% Define functions to typeset dynamically
+
+
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\expectation}[1]{\mathbb{E}\left[#1\right]}
+\newcommand{\cov}[1]{\operatorname{Cov}\left[#1\right]}
+\newcommand{\var}[1]{\operatorname{Var}\left[#1\right]}
+
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+
+
+
+% Infintesimals
+% \newcommand{\d}{\mathrm{d}}
+\newcommand{\dt}{\mathrm{dt}}
+
+% Letters \mathbb
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\B}{\mathbb{B}}
+\renewcommand{\S}{\mathbb{S}}
+
+% Letters \mathcal
+\renewcommand{\AA}{\mathcal{A}}
+\newcommand{\BB}{\mathcal{B}}
+\newcommand{\CC}{\mathcal{C}}
+\newcommand{\DD}{\mathcal{D}}
+\newcommand{\EE}{\mathcal{E}}
+\newcommand{\FF}{\mathcal{F}}
+\newcommand{\GG}{\mathcal{G}}
+\newcommand{\HH}{\mathcal{H}}
+\newcommand{\II}{\mathcal{I}}
+\newcommand{\JJ}{\mathcal{J}}
+\newcommand{\KK}{\mathcal{K}}
+\newcommand{\LL}{\mathcal{L}}
+\newcommand{\MM}{\mathcal{M}}
+\newcommand{\NN}{\mathcal{N}}
+\newcommand{\OO}{\mathcal{O}}
+\newcommand{\PP}{\mathcal{P}}
+\newcommand{\QQ}{\mathcal{Q}}
+\newcommand{\RR}{\mathcal{R}}
+\renewcommand{\SS}{\mathcal{S}}
+\newcommand{\TT}{\mathcal{T}}
+\newcommand{\UU}{\mathcal{U}}
+\newcommand{\VV}{\mathcal{V}}
+\newcommand{\WW}{\mathcal{W}}
+\newcommand{\XX}{\mathcal{X}}
+\newcommand{\YY}{\mathcal{Y}}
+\newcommand{\ZZ}{\mathcal{Z}}

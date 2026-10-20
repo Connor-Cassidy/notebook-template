@@ -1,0 +1,6 @@
+*.Rmd
+/bibliography.Rmd
+/_bookdown.generated.yml
+/_book/
+/.Rhistory
+*.bookdown.Rmd
